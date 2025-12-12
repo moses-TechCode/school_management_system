@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  background-color:#b9b1bc;
+}
+/* Title */
+.title {
+  color: #000;
+  margin-bottom: 20px;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+/* Scrollable container for small screens */
+.table-container {
+  width: 100%;
+  max-width: 1000px;
+  overflow-x: auto;
+  background-color: #2C343D;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Table base */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 600px;
+  color: whitesmoke;
+}
+
+/* Header */
+thead tr {
+  background-color: white;
+  text-align: left;
+}
+
+/* Header cells */
+th {
+  padding: 12px 10px;
+  border: 1px solid #3E4A56;
+  color: #8AB4F8;
+  white-space: nowrap;
+}
+
+/* Table cells */
+td {
+  padding: 10px;
+  border: 1px solid #3E4A56;
+  white-space: nowrap;
+}
+
+/* Alternating row colors */
+tbody tr{
+  background-color: #252C35;
+}
+
+/* Hover effect */
+tbody tr:hover {
+  background-color: #8d3bae;
+  color: #000;
+  transition: background-color 0.2s ease-in;
+}
+
+/* Active cell highlight */
+td:active {
+  background-color: #5C7CFA;
+  color: white;
+}
+.container{
+  width: 100%;
+  height: auto;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  border: 3px solid gray;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* ✅ Responsive styling */
+@media (max-width: 768px) {
+  table {
+    font-size: 0.8em;
+    min-width: 500px;
+  }
+}
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.2em;
+    color: #000;
+  }
+
+  table {
+    font-size: 0.7em;
+    min-width: 400px;
+  }
+
+  th, td {
+    padding: 8px;
+  }
+}
+button{
+  width: 100%;
+  background: white;
+}
+form{
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+}

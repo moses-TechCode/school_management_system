@@ -1,0 +1,150 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.hero_page{
+  background-color:#1c73c8;
+  background-image: url('../Images/B869-School.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 400px;
+  padding: 10px;
+}
+.hero_page h1{
+  color: whitesmoke;
+}
+.hero_page p{
+  color:white;
+  margin: 10px;
+}
+.hero_page a{
+  text-decoration: none;
+  background-color: white;
+  border-radius: 10px; 
+  width:  190px;
+  height: 40px;
+  color: black;
+  border: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 15px;
+}
+.features {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 500px;
+}
+
+
+.features-section {
+    padding: 50px 20px;
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 2.2rem;
+    font-weight: 600;
+    color: #343a40;
+    margin-bottom: 40px;
+}
+
+
+.features-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px; 
+    flex-wrap: wrap; 
+}
+
+.feature-card {
+    background-color: #ffffff; 
+    border-radius: 8px; 
+    padding: 30px;
+    text-align: left;
+    flex: 1; 
+    min-width: 250px; 
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 
+                0 2px 4px -2px rgba(0, 0, 0, 0.06);
+    transition: transform 0.3s ease; 
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+
+.icon-placeholder {
+    font-size: 3rem; 
+    color: #007bff; 
+    line-height: 1;
+    margin-bottom: 15px;
+}
+
+
+.card-title {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #343a40;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.card-description {
+    font-size: 1rem;
+    color: #6c757d; 
+    line-height: 1.5;
+    margin-bottom: 0;
+}
+.footer{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color:#82868ccd;
+  height: 400px;
+}
+.footer h3{
+  font-size: 2rem;
+    font-weight: 800;
+    color: black;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+.footer a{
+  text-decoration: none;
+  background-color: blue;
+  border-radius: 10px; 
+  width:  190px;
+  height: 40px;
+  color: whitesmoke;
+  border: none;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 15px;
+}
+
+@media (max-width: 768px) {
+    .features-container {
+        flex-direction: column; /* Stack the cards vertically */
+        gap: 20px;
+    }
+}

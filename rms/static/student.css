@@ -1,7 +1,3 @@
-*,::before,*,::after{
-  margin: 0;
-  padding: 0;
-}
 /* General Setup and Colors */
 :root {
     --background-color: #f4f7f9;
@@ -12,7 +8,6 @@
     --primary-button-bg: #4a89f8;
     --primary-button-hover: #3672d6;
     --secondary-button-border: #e0e0e0;
-    --secondary-button: #ffffff;
 }
 
 body {
@@ -133,26 +128,23 @@ button {
 .primary-button {
     background-color: var(--primary-button-bg);
     color: var(--card-background);
-padding: 10px 20px;
 }
 
 .primary-button:hover {
-    background-color: var(--secondary-button);
-    color: var(--text-color-primary);
-  border: 2px solid var(--secondary-button-border);
+    background-color: var(--secondary-button-border);
 }
 
 .secondary-button {
     background-color: var(--card-background);
     color: var(--text-color-primary);
-    border: 2px solid var(--secondary-button-border);
-padding: 10px 20px;
+    border: 1px solid var(--secondary-button-border);
 }
-.secondary-button:hover{
-  background-color: var(--primary-button-bg);
-  color: white;
-  border: none;
+
+.secondary-button:hover {
+    background-color: --primary-button-bg;
+    border-color: var(--primary-button-bg);
 }
+
 /* Responsive Design */
 
 /* For tablets and smaller screens */
@@ -182,7 +174,7 @@ padding: 10px 20px;
   }
 
   .actions-grid {
-    grid-template-columns: repeat(2, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   }
 }
 
